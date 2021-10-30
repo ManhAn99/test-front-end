@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { v4 as uuidv4 } from 'uuid';
+//responsive
+import { mobile } from '../../responsive';
 
 const initialState = { 
     name : '',
@@ -79,6 +81,7 @@ const Container = styled.form`
   flex : 1;
   border : 1px solid black;
   padding : 20px 50px 60px 50px;
+  ${mobile({padding : '20px'})}
   >h3 {
       text-align : center
   }

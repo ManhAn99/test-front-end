@@ -59,7 +59,7 @@ const Container = styled.div`
  >h3 {
       text-align : center
   }
- ${mobile({border : '1px solid black', borderTop : 'none'})}
+ ${mobile({border : '1px solid black', borderTop : 'none', padding : '20px'})}
 `
 
 const SearchContainer = styled.div`

@@ -1,6 +1,8 @@
 import React,{useState} from 'react'
 import DetailTask from './DetailTask/DetailTask'
 import styled from 'styled-components'
+//responsive
+import { mobile } from '../../../responsive'
 
 const TaskCard = ({task,removeTask,updateTask,isCheckedTask}) => {
     const [toggleDetail,setToggleDetail] = useState(false)
@@ -79,6 +81,7 @@ const ContainerRight = styled.div`
      height : 30px;
      color : white;
      border-radius: 5px;
+     ${mobile({width : '70px'})}
  }
  .detail {
    background-color: #00BCD4;
